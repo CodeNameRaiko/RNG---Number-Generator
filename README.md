@@ -8,9 +8,13 @@ This RNG project i make use of
 -document.createElement and appendChild
 -parseInt 
 
->> from and two Inputs work succesfully.
---------
+> from and two Inputs work succesfully.
+> 
+---
+
 need to do:
 << Animations and transitions 
+
 << 'Amount of generated numbers' function 
+
 << different variants 
