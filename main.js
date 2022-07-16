@@ -3,7 +3,7 @@ var alignmentBtn = document.getElementById('align')
 var divOne = document.getElementById('pageTwo')
 var amount = document.getElementById('amount')
 var OkButton = document.getElementById('submit-btn')
-var bgSVG = document.getElementById('bg-svg')
+var bgSVG = document.getElementById('res-svg')
 var list = document.getElementById('list') 
 
 startButton.addEventListener('click', GetStarted)

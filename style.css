@@ -12,6 +12,7 @@ body {
     user-select: none;
     height: 100vh; 
     width: 100vw;
+    overflow-x: hidden;
 }
 .title {
     width: 400px;
@@ -28,16 +29,16 @@ body {
 .gen {
     text-transform: uppercase; 
 }
-.bg-svg {
+.res-svg {
     height:500px;
     width:700px;
-    background: #d9d9d9; 
+    background: linear-gradient(157.33deg, #D9D9D9 14.73%, #F2F2F2 63.49%, #F2F2F2 63.49%);
     border-radius: 58px;
     z-index: -1;
     position: absolute;
     right: -100px;
     bottom: -100px;
-    
+    overflow-x: hidden;
 }
 .button-align {
     display: flex; 
@@ -140,8 +141,7 @@ top: 300px;
      background: linear-gradient(157.33deg, #D9D9D9 14.73%, #F2F2F2 63.49%, #F2F2F2 63.49%);
      background-size: cover;
      position: relative;
-     bottom: 558px;
-
+     bottom: 0;
     }
 .res-title {
     font-family: 'Anaheim';
@@ -173,3 +173,5 @@ top: 300px;
     align-content: center;
  
 }   
+
+ 
