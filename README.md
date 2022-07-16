@@ -13,7 +13,7 @@ This RNG project i make use of
 
 -parseInt 
 
-> from and two Inputs work succesfully.
+> 'from' and 'to' Inputs work succesfully.
 > 
 ---
 
