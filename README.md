@@ -18,7 +18,6 @@ This RNG project i make use of
 -Do while loop
 
 > 'from' and 'to' Inputs work succesfully.
-> 
 > 'Amount of generated numbers' works but not succesfully.
 
 need to do:
