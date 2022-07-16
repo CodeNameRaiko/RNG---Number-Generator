@@ -1,18 +1,26 @@
 # RNG---Number-Generator 
 This RNG project i make use of
 
-JS - DOM Manipulation 
-Math.Random() function 
-ClassList toggles 
-(HERE IN BASEFILES ONLY)
+-classList toggles
 
-this is the base file.
-I have yet to implement: 
+-JS - DOM Manipulation
 
--Function that generates x amount of numbers given from the input 'amount of generated numbers'.
+-Math.Random() function
 
--Smoothen the styles a bit to make it look more appealing.
+-classList toggles
 
-And i'll be making variants of these files adding and changing stuff and see whic versions looks best. 
-NOTE!
-That the only functioning inputs are 'from' and 'to' in the basefiles. I'll have this fixed in my branches
+-functions
+
+-document.createElement and appendChild
+
+-parseInt
+
+-Do while loop
+
+Instead of 'from' & 'to' to work seperate from te 'Amount of generated numbers' input, you now need to fill all 3 the inputs.
+
+need to do:
+
+<< Animations and transitions
+
+<< different variants
