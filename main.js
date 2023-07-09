@@ -1,50 +1,49 @@
-var startButton = document.getElementById('start')
-var alignmentBtn = document.getElementById('align')
-var divOne = document.getElementById('pageTwo')
-var OkButton = document.getElementById('submit-btn')
-var bgSVG = document.getElementById('res-svg')
-var list = document.getElementById('list') 
+var Start = document.getElementById('start');
+var resultButton = document.getElementById('submit-btn');
+var amountInt = parseInt(amount.value);
+/***********Page one transition*************/
+Start.addEventListener('click', PageTransitionOne);
+function PageTransitionOne() {
+    let pageOne = document.getElementById('align'); 
+    let pageTwo = document.getElementById('pageTwo');
+    Start.classList.add('hide')
+    pageOne.classList.add('hide')
+    pageTwo.classList.remove('hidehide')
+ }
+/************************/
 
-// Startpage -> RNG Pannel
-startButton.addEventListener('click', GetStarted)
-function GetStarted() {
-  startButton.classList.add('hide');
-  alignmentBtn.classList.add('hide');
-   divOne.classList.remove('hidehide');
-}  
-//RNG Pannel -> results
-OkButton.addEventListener('click', resultsPage)
-function resultsPage() {
-  bgSVG.classList.remove('bg-svg')
-  bgSVG.classList.add('container')
+resultButton.addEventListener('click', functionTrain);
+
+function functionTrain() {
+    ResultsPop();
+    const amount = document.getElementById('amount').value;
+    for(var i = 1; i <= parseInt(amount); i++) {
+        Results();    
+    }
 }
 
-// Amount of 'results()' repeats
-OkButton.addEventListener('click', rngRepeat) 
-function rngRepeat() {
-  const amount = document.querySelector('#amount').value 
-  
-  for (let i = 0; i < parseInt(amount); i++)
-  results();   
-}
- 
-//Results  
-/*OkButton.addEventListener('click', results) */
 
- function results() {
-   //part 1
-  const from = document.querySelector("#from").value;
-  const to = document.querySelector("#to").value;
-  let createdNum = parseInt(Math.floor(Math.random() * parseInt(to)));
-  //pat 2
-  if( createdNum >= parseInt(from) ) {
-    var listItem = document.createElement('p') 
-    listItem.innerText = parseInt(createdNum); 
-    listItem.classList.add('numbers')
-  }  
-  //part 3
-  var styleDiv = document.createElement('div')
-  list.appendChild(styleDiv)
-  styleDiv.appendChild(listItem)
-  styleDiv.classList.add('styleDiv') 
+function ResultsPop() {
+    let standardWidth = document.getElementById('res-svg');
+    standardWidth.classList.add('container')
+    standardWidth.classList.remove('bg-svg')
+ }
+function Results() {
+    const fromNum = document.querySelector('#from').value;
+    const toNum = document.querySelector('#to').value;
+    const amount = document.getElementById('amount').value;
+    randomNum = Math.floor(Math.random() * parseInt(toNum));
+    if(! parseInt(fromNum) == "" && !parseInt(toNum) == "")  {
+        if(randomNum >= parseInt(fromNum)) {
+            generateElement();
+        }  else {
+            Results(); //Reloop until you get the right number for every click.             
+        }   
+    }  
 } 
+function generateElement() {
+    const List = document.getElementById('listResults');
+    randomNumEl = document.createElement('P'); 
+    randomNumEl.append(randomNum); 
+    List.append(randomNumEl);  
+   } 
