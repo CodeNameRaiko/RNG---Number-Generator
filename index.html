@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    
+ 
     <script defer src="main.js"></script>
-    <title>Rando - NumGenery</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <title>Random Number Generator</title>
 </head>
 <body>
     <div class="title">
@@ -14,48 +18,45 @@
         <br>
         <span class="gen">Generator</span>
     </div>
-
-<div id="align" class="button-align">
-    <button id="start" class="get_started">Get Started</button>
-</div> 
-
-<div class="div-align hidehide" id="pageTwo">
-    <div id="wrapper" class="wrapper">
-        <div id="div-of-inputs" class="input-holder">
-            <div class="harmony-align">
-                <label class="label">Amount of generated numbers</label>
-                <br>
-                <input id="amount" min="0" type="number" class="input amount">
-            </div>
-        
-           <div class="harmony-align">
-                <label class="label">from:</label>
-                <br>
-                <input id="from" min="0" count="1" type="number" class="input range" placeholder="..."> 
-            </div>
+    
+    <div id="align" class="button-align">
+        <button id="start" class="get_started">Get Started</button>
+    </div> 
+    
+    <div class="div-align hidehide" id="pageTwo">
+        <div id="wrapper" class="wrapper">
+            <div id="div-of-inputs" class="input-holder">
+                <div class="harmony-align">
+                    <label class="label">Amount of numbers</label>
+                    <br>
+                    <input id="amount" min="0" type="number" class="input amount">
+                </div>
                 
-            <div class="harmony-align">
-                <label class="label">to:</label>
-                <br>
-                <input id="to" type="number" min="0" class="input range" placeholder="..."> 
-            </div>
-
-            <div class="harmony-align">
-                <label class="label none">None</label>
-                <br>
-                <button type="submit" id="submit-btn" class="submit">OK</button>
-            </div>
-        </div> 
+                <div class="harmony-align">
+                    <label class="label">from:</label>
+                    <br>
+                    <input id="from" min="0" count="1" type="number" class="input range" placeholder="..." required> 
+                </div>
+                
+                <div class="harmony-align">
+                    <label class="label">to:</label>
+                    <br>
+                    <input id="to" type="number" min="0" class="input range" placeholder="..." required> 
+                </div>
+                
+                <div class="harmony-align">
+                    <label class="label none">None</label>
+                    <br>
+                    <button type="submit" id="submit-btn" class="submit">OK</button>
+                </div>
+            </div> 
+        </div>
     </div>
-</div>
 
-<span class="copyright">© Copyrights Fuschia Inc. 2022</span>
-   <div id="res-svg" class="res-svg">
-       <h1 class="res-title">Results</h1>
-    <div id="list" class="result-align">
-
+    <span class="copyright">© Copyrights Fuschia Inc. 2022</span>
+    <div id="res-svg" class="bg-svg">
+        <h1 class="res-title">Results</h1>
+        <div id="listResults" class="list"></div>
     </div>
-   </div>
-   
 </body>
-</html>
+</html> 
