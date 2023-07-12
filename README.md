@@ -16,3 +16,4 @@ I have yet to implement:
 And i'll be making variants of these files adding and changing stuff and see whic versions looks best. 
 NOTE!
 That the only functioning inputs are 'from' and 'to' in the basefiles. I'll have this fixed in my branches
+EDIT: It is done, check the latest branch.
